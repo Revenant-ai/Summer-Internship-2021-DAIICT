@@ -1,8 +1,5 @@
-
-import java.util.Scanner;
-
 public class sum_calc{
-    public static void main(String[] args)
+    public static void main()
     {
         sum_calc calculator = new sum_calc();
         calculator.setFirstNumber(5.0);

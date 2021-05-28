@@ -12,7 +12,7 @@ public class Account {
     }
 
     public Account(){
-        System.out.println("Empty constructor called");
+        this("000000",000,"Anonymous","NA","0000000");
     }
     public Account (String accountNumber, double balance, String name, String email, String phone){
         this.accountNumber=accountNumber;
