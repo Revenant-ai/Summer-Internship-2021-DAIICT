@@ -2,13 +2,13 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Player implements ISaveable {
+public class Player_inter implements ISaveable {
     private String name;
     private int hitPoints;
     private int strength;
     private String weapon;
 
-    public Player(String name, int hitPoints, int strength) {
+    public Player_inter(String name, int hitPoints, int strength) {
         this.name = name;
         this.hitPoints = hitPoints;
         this.strength = strength;
@@ -78,18 +78,5 @@ public class Player implements ISaveable {
         }
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

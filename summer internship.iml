@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/methods" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/OOP concepts/classes and inheritence" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/OOP concepts/composition" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Generics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Interface_inner_class" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />

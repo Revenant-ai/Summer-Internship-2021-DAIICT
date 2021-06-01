@@ -25,7 +25,7 @@ public class inter {
         // simulate getting values from a file – this allows you to type as many values as your class
         // requires, and returns an ArrayList.
 
-        Player Aaryan = new Player("Aaryan", 10, 15);
+        Player_inter Aaryan = new Player_inter("Aaryan",10,15);
         System.out.println(Aaryan.toString());
         saveObject(Aaryan);
 
