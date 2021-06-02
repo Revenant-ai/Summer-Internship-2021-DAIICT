@@ -8,42 +8,40 @@ public class Mainn {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team<FootballPlayer> adelaideCrows = new Team<>("DC");
-        adelaideCrows.addPlayer(joe);
+        Team<FootballPlayer> DC = new Team<>("DC");
+        DC.addPlayer(joe);
 //        adelaideCrows.addPlayer(pat);
 //        adelaideCrows.addPlayer(beckham);
 
-        System.out.println(adelaideCrows.numPlayers());
+        System.out.println(DC.numPlayers());
 
-        Team<BaseballPlayer> baseballTeam = new Team<>("RCB");
-        baseballTeam.addPlayer(pat);
+        Team<BaseballPlayer> rcb= new Team<>("RCB");
+       rcb.addPlayer(pat);
 
         Team<SoccerPlayer> brokenTeam = new Team<>("Punjab super kings");
-        brokenTeam.addPlayer(beckham);
+        DC.addPlayer(joe);
 
-        Team<FootballPlayer> melbourne = new Team<>("CSK");
+        Team<FootballPlayer> CSK = new Team<>("CSK");
         FootballPlayer banks = new FootballPlayer("Halland");
-        melbourne.addPlayer(banks);
+        DC.addPlayer(banks);
 
-        Team<FootballPlayer> hawthorn= new Team<>("MI");
-        Team<FootballPlayer> fremantle= new Team<>("Pirlo");
+        Team<FootballPlayer> MI= new Team<>("MI");
+        Team<FootballPlayer> Juve= new Team<>("Juve");
 
-        hawthorn.matchResult(fremantle, 1, 0);
-        hawthorn.matchResult(adelaideCrows, 3, 8);
+        MI.matchResult(MI, 1, 0);
+        DC.matchResult(DC, 3, 8);
 
-        adelaideCrows.matchResult(fremantle, 2, 1);
+        DC.matchResult(MI, 2, 1);
 //        adelaideCrows.matchResult(baseballTeam, 1, 1);
 
         System.out.println("Rankings");
-        System.out.println(adelaideCrows.getName() + ": " + adelaideCrows.ranking());
-        System.out.println(melbourne.getName() + ": " + melbourne.ranking());
-        System.out.println(fremantle.getName() + ": " + fremantle.ranking());
-        System.out.println(hawthorn.getName() + ": " + hawthorn.ranking());
+        System.out.println(DC.getName() + ": " + DC.ranking());
+        System.out.println(MI.getName() + ": " + MI.ranking());
+        System.out.println(CSK.getName() + ": " + CSK.ranking());
+        System.out.println(rcb.getName() + ": " + rcb.ranking());
 
-        System.out.println(adelaideCrows.compareTo(melbourne));
-        System.out.println(adelaideCrows.compareTo(hawthorn));
-        System.out.println(hawthorn.compareTo(adelaideCrows));
-        System.out.println(melbourne.compareTo(fremantle));
+        System.out.println(DC.compareTo(MI));
+        System.out.println(MI.compareTo(CSK));
 
         ArrayList<Team> teams;
     }
